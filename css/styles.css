@@ -1,0 +1,128 @@
+html {
+  font-size: 10px;
+  background: url(https://i.imgur.com/b9r5sEL.jpg) bottom center;
+  background-size: cover;
+  /*overflow: hidden;*/
+  width: 100%;
+}
+
+body, html {
+  background-color: transparent;	
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+*::-webkit-media-controls-panel {
+  background-color: #e8c959 !important;
+  outline: 0px solid transparent;
+}
+
+audio:focus {
+  outline: none;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.1;
+  color: #ffde66;
+  letter-spacing: 5px;
+}
+
+p {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.1;
+  color: #ffde66;
+}
+
+.lennon {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.1;
+  text-decoration-color: #ffde66;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 6vh;
+}
+
+.sizeAdjust {
+  margin-top: 26vh;
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  margin-top: 6vh;
+  margin-bottom: 30vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 7rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
+
+.message-container{
+  display: none;
+}
+
+@media screen and (max-width: 1170px){
+  body{
+    background: none;
+    background-color: #2e2e2e;
+  }
+  .key, .keys{
+    display: none;
+  }
+  .message-container{
+    display: block;
+    width: 80vw;
+    margin: 30vh auto;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: rgba(222, 222, 222, 0.7);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    animation-name: zoomIn;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+  }
+  .message-container p{
+    font-size: 5vw;
+  }
+}
