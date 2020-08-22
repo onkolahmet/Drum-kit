@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+</head>
+
+<body>
+  <p class="sizeAdjust">Imagine all the people living for today.</p>
+  <audio id="Test_Audio" controls>
+    <source src="./sounds/imagine.mp3" type="audio/mpeg">
+  </audio>
+  <button class="lennon" id="a" disabled style=" outline: none;
+  border: none; display:block; background-color: transparent; color: white">
+    John Lennon
+  </button>
+  <h1>MAKE YOUR VIBE <i class="fas fa-headphones-alt"></i> </h1>
+
+  <div class="keys">
+    <button class="a btns" id="a" style=" outline: none;
+    cursor:pointer; border: none; display:block;
+    background-color: transparent; color: white">
+      <div data-key="65" class="key">
+        <kbd>A</kbd>
+        <span class="sound">clap</span>
+      </div>
+    </button>
+    <button class="s btns" id="s" style=" outline: none;
+    cursor:pointer; border: 5px solid transparent;
+    background-color: transparent; color: white">
+      <div data-key="83" class="key">
+        <kbd>S</kbd>
+        <span class="sound">hihat</span>
+      </div>
+    </button>
+    <button class="d btns" id="d" style="  outline: none;
+    cursor:pointer; border: 5px solid transparent;
+    background-color: transparent; color: white">
+      <div data-key="68" class="key">
+        <kbd>D</kbd>
+        <span class="sound">kick</span>
+      </div>
+    </button>
+    <button class="f btns" id="f" style="  outline: none;
+    cursor:pointer; border: 5px solid transparent;
+    background-color: transparent; color: white">
+      <div data-key="70" class="key">
+        <kbd>F</kbd>
+        <span class="sound">openhat</span>
+      </div>
+    </button>
+    <button class="g btns" id="g" style="  outline: none;
+    cursor:pointer; border: 5px solid transparent;
+    background-color: transparent; color: white">
+      <div data-key="71" class="key">
+        <kbd>G</kbd>
+        <span class="sound">boom</span>
+      </div>
+    </button>
+    <button class="h btns" id="h" style=" outline: none;
+    cursor:pointer; border: 5px solid transparent;
+    background-color: transparent; color: white">
+      <div data-key="72" class="key">
+        <kbd>H</kbd>
+        <span class="sound">ride</span>
+      </div>
+    </button>
+    <button class="j btns" id="j" style="  outline: none;
+    cursor:pointer; border: 5px solid transparent;
+    background-color: transparent; color: white">
+      <div data-key="74" class="key">
+        <kbd>J</kbd>
+        <span class="sound">snare</span>
+      </div>
+    </button>
+    <button class="k btns" id="k" style="  outline: none;
+    cursor:pointer; border: 5px solid transparent;
+    background-color: transparent; color: white">
+      <div data-key="75" class="key">
+        <kbd>K</kbd>
+        <span class="sound">tom</span>
+      </div>
+    </button>
+    <button class="l btns" id="l" style=" outline: none;
+    cursor:pointer; border: 5px solid transparent;
+    background-color: transparent; color: white">
+      <div data-key="76" class="key">
+        <kbd>L</kbd>
+        <span class="sound">tink</span>
+      </div>
+  </div>
+  </button>
+
+  <audio data-key="65" src="./sounds/clap.mp3"></audio>
+  <audio data-key="83" src="./sounds/hihat.mp3"></audio>
+  <audio data-key="68" src="./sounds/kick.mp3"></audio>
+  <audio data-key="70" src="./sounds/openhat.mp3"></audio>
+  <audio data-key="71" src="./sounds/boom.mp3"></audio>
+  <audio data-key="72" src="./sounds/ride.mp3"></audio>
+  <audio data-key="74" src="./sounds/snare.mp3"></audio>
+  <audio data-key="75" src="./sounds/tom.mp3"></audio>
+  <audio data-key="76" src="./sounds/tink.mp3"></audio>
+
+  
+
+  <script src="index.js" charset="utf-8"></script>
+  <div class="message-container">
+  <p>This site is not mobile friendly. Hence, kindly check it on your laptop or Desktop devices.</p>
+  </div>
+
+</body>
+
+</html>
